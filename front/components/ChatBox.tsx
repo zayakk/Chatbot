@@ -30,7 +30,7 @@ export default function ChatBox() {
   };
 
   return (
-    <div className="p-4 bg-gray-100 h-[600px] w-[400px] flex flex-col rounded-2xl shadow-md">
+    <div className="p-4 bg-gray-100 h-[800px] w-[1000px] flex flex-col rounded-2xl shadow-md">
       <div className="flex-1 overflow-y-auto mb-2 space-y-2">
         {messages.map((msg, i) => (
           <div

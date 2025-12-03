@@ -5,6 +5,8 @@ class Property(models.Model):
     location = models.CharField(max_length=100)
     price = models.IntegerField()
     description = models.TextField()
-
+    area = models.PositiveIntegerField(null=True, blank=True)
+    
     def __str__(self):
         return f"{self.name} ({self.location})"
+
