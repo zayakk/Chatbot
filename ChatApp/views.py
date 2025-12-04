@@ -67,7 +67,7 @@ def parse_user_intent(text: str):
     m_price = re.search(r'(\d+)[\s]*(?:сая|сая-|).*(?:доош|бага|төгрөг)', t, re.IGNORECASE)
     if m_price:
         price_str = m_price.group(1)
-        if "сая" in t:
+        if "сая" or "say" in t:
             intent["price_max"] = int(price_str) * 1000000
         else:
             intent["price_max"] = int(price_str)
